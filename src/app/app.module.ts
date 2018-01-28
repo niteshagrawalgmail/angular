@@ -3,18 +3,19 @@ import { NgModule } from '@angular/core';
 import { HeroService } from './hero.service';
 
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './heroes/heroes.component';
+import { HeroesModuleModule } from './heroes-module/heroes-module.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeroesComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HeroesModuleModule
   ],
   providers: [HeroService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
