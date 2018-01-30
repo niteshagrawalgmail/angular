@@ -4,7 +4,8 @@ import { HeroService } from './hero.service';
 
 import { AppComponent } from './app.component';
 import { HeroesModuleModule } from './heroes-module/heroes-module.module';
-
+import { CalculatorModule } from 'angularcalculatorlibrary';
+import { CalculatorService } from 'angularcalculatorlibrary';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { HeroesModuleModule } from './heroes-module/heroes-module.module';
     BrowserModule,
     HeroesModuleModule
   ],
-  providers: [HeroService],
+  providers: [HeroService, CalculatorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
